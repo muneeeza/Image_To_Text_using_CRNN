@@ -1,0 +1,20 @@
+from tkinter import *
+from tkinter import ttk
+
+
+root = Tk() 
+root.title('Image To Text using CRNN') 
+root.configure(bg='white')
+
+def winCentre(window): 
+     app_Width = 800
+     app_Height = 600
+     swidth = window.winfo_screenwidth() 
+     screen_height = window.winfo_screenheight() 
+     x = (swidth / 2) - (app_Width / 2)
+     y = (screen_height / 2) - (app_Height / 2) 
+     window.geometry(f'{app_Width}x{app_Height}+{int(x)}+{int(y)}')
+
+winCentre(root)
+
+root.mainloop()
